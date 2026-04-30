@@ -1,120 +1,333 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-<!--This file was converted to xhtml by LibreOffice - see https://cgit.freedesktop.org/libreoffice/core/tree/filter/source/xslt for the code.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leiss Hoffman — Composer & Sound Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<head profile="http://dublincore.org/documents/dcmi-terms/">
-<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
-<title xml:lang="en-US">- no title specified</title>
-<meta name="DCTERMS.title" content="" xml:lang="en-US"/>
+    :root {
+      --bg: #f5f2ec;
+      --ink: #1a1714;
+      --mid: #5a5450;
+      --rule: #c9c2b8;
+      --accent: #2b4d3a;
+      --accent-light: #e8f0eb;
+      --serif: 'DM Serif Display', Georgia, serif;
+      --mono: 'DM Mono', 'Courier New', monospace;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
 
-<meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646"/>
-<meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml"/>
-<meta name="DCTERMS.creator" content="Un-named"/>
-<meta name="DCTERMS.issued" content="2026-04-22T00:27:25" scheme="DCTERMS.W3CDTF"/>
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.6;
+      padding: 3rem 1.5rem;
+    }
 
-<meta name="DCTERMS.modified" content="2026-04-29T19:33:41.279000000" scheme="DCTERMS.W3CDTF"/>
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 6vw, 3.8rem);
+      letter-spacing: -0.01em;
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+
+    .subtitle {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact, .portfolio {
+      font-size: 0.85rem;
+      color: var(--mid);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .portfolio a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .portfolio a:hover {
+      text-decoration: underline;
+    }
 
 
-<meta name="xsl:vendor" content="libxslt"/>
-<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en"/>
-<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en"/>
-<link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en"/>
-<link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en"/>
+    /* ── SECTIONS ── */
+    section {
+      margin-bottom: 2.25rem;
+    }
 
-<style>
-    table { border-collapse:collapse; border-spacing:0; empty-cells:show }
-    td, th { vertical-align:top; font-size:12pt;}
-    h1, h2, h3, h4, h5, h6 { clear:both;}
-    ol, ul { margin:0; padding:0;}
-    li { list-style: none; margin:0; padding:0;}
-    span.footnodeNumber { padding-right:1em; }
-    span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
-    span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
-    .paragraph-P1{ color:#1a1a1a; font-size:11pt; margin-bottom:0.071cm; margin-top:0cm; text-align:center ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P10{ color:#1a1a1a; font-size:11pt; margin-bottom:0.035cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P11{ color:#1a1a1a; font-size:11pt; margin-bottom:0.035cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P12{ color:#1a1a1a; font-size:11pt; margin-bottom:0.035cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P13{ color:#1a1a1a; font-size:11pt; margin-bottom:0.035cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P14{ color:#1a1a1a; font-size:11pt; margin-bottom:0cm; margin-top:0.353cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P15{ color:#1a1a1a; font-size:11pt; margin-bottom:0.071cm; margin-top:0.212cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P16{ color:#1a1a1a; font-size:11pt; margin-bottom:0.071cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P17{ color:#444444; font-size:10.5pt; margin-bottom:0.071cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; font-weight:normal; }
-    .paragraph-P18{ color:#444444; font-size:10.5pt; margin-bottom:0.106cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; font-weight:bold; }
-    .paragraph-P19{ color:#1a1a1a; font-size:11pt; margin-bottom:0.337cm; margin-top:0.302cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P2{ color:#c00000; font-size:11pt; margin-bottom:0.106cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; font-weight:bold; }
-    .paragraph-P20{ color:#1a1a1a; font-size:11pt; margin-bottom:0.035cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P3_borderStart{ color:#1a1a1a; font-size:11pt; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; padding-left:0cm; padding-right:0cm; padding-top:0cm; border-left-style:none; border-right-style:none; border-top-style:none; padding-bottom:0cm;  border-bottom-style:none; }
-    .paragraph-P3_borderSides{ color:#1a1a1a; font-size:11pt; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; padding-left:0cm; padding-right:0cm; border-left-style:none; border-right-style:none; padding-bottom:0cm; padding-top:0cm;  border-top-style:none; border-bottom-style:none; }
-    .paragraph-P3_borderEnd{ color:#1a1a1a; font-size:11pt; margin-bottom:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; padding-left:0cm; padding-right:0cm; padding-bottom:0.035cm; border-left-style:none; border-right-style:none; border-bottom-width:0.0349cm; border-bottom-style:solid; border-bottom-color:#c00000; padding-top:0cm;  border-top-style:none;}
-    .paragraph-P3{ color:#1a1a1a; font-size:11pt; margin-bottom:0cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; padding-left:0cm; padding-right:0cm; padding-top:0cm; padding-bottom:0.035cm; border-left-style:none; border-right-style:none; border-top-style:none; border-bottom-width:0.0349cm; border-bottom-style:solid; border-bottom-color:#c00000; }
-    .paragraph-P4{ color:#1a1a1a; font-size:11pt; margin-bottom:0cm; margin-top:0.212cm; text-align:justify ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P5{ color:#1a1a1a; font-size:11pt; margin-bottom:0cm; margin-top:0.3cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P6{ color:#1a1a1a; font-size:11pt; margin-bottom:0.035cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P7{ color:#1a1a1a; font-size:11pt; margin-bottom:0.035cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P8{ color:#1a1a1a; font-size:11pt; margin-bottom:0.035cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .paragraph-P9{ color:#1a1a1a; font-size:11pt; margin-bottom:0.035cm; margin-top:0cm; text-align:left ! important; font-family:Arial; writing-mode:horizontal-tb; direction:ltr; }
-    .text-T1{ color:#1a1a1a; font-size:28pt; font-weight:bold; }
-    .text-T10{ color:#444444; font-size:10.5pt; font-weight:bold; }
-    .text-T11{ color:#444444; font-size:10.5pt; font-style:italic; }
-    .text-T12{ color:#444444; font-size:10.5pt; font-weight:normal; }
-    .text-T13{ color:#444444; font-family:Arial; font-size:11pt; font-weight:normal; }
-    .text-T15{ color:#808080; font-size:10.5pt; font-style:italic; }
-    .text-T16{ color:#b2b2b2; font-size:10.5pt; font-style:italic; }
-    .text-T17{ font-size:10.5pt; font-weight:bold; }
-    .text-T18{ font-family:Arial; font-size:10.5pt; font-weight:normal; }
-    .text-T2{ color:#777777; font-size:11pt; }
-    .text-T20{ font-size:11pt; font-weight:bold; }
-    .text-T3{ color:#777777; font-size:10pt; }
-    .text-T4{ color:#777777; font-family:Garamond; font-size:10pt; }
-    .text-T5{ color:#777777; font-size:10.5pt; }
-    .text-T7{ color:#c00000; font-weight:bold; }
-    .text-T8{ color:#444444; font-size:10.5pt; }
-    .text-T9{ color:#444444; font-size:10.5pt; }
-    /* ODF styles with no properties representable as CSS:
-    .dp1 .ListLabel_20_1 .ListLabel_20_10 .ListLabel_20_11 .ListLabel_20_12 .ListLabel_20_13 .ListLabel_20_14 .ListLabel_20_15 .ListLabel_20_16 .ListLabel_20_17 .ListLabel_20_18 .ListLabel_20_19 .ListLabel_20_2 .ListLabel_20_20 .ListLabel_20_21 .ListLabel_20_22 .ListLabel_20_23 .ListLabel_20_24 .ListLabel_20_25 .ListLabel_20_26 .ListLabel_20_27 .ListLabel_20_28 .ListLabel_20_29 .ListLabel_20_3 .ListLabel_20_30 .ListLabel_20_31 .ListLabel_20_32 .ListLabel_20_33 .ListLabel_20_34 .ListLabel_20_35 .ListLabel_20_36 .ListLabel_20_37 .ListLabel_20_38 .ListLabel_20_39 .ListLabel_20_4 .ListLabel_20_40 .ListLabel_20_41 .ListLabel_20_42 .ListLabel_20_43 .ListLabel_20_44 .ListLabel_20_45 .ListLabel_20_46 .ListLabel_20_47 .ListLabel_20_48 .ListLabel_20_49 .ListLabel_20_5 .ListLabel_20_50 .ListLabel_20_51 .ListLabel_20_52 .ListLabel_20_53 .ListLabel_20_54 .ListLabel_20_55 .ListLabel_20_56 .ListLabel_20_57 .ListLabel_20_58 .ListLabel_20_59 .ListLabel_20_6 .ListLabel_20_60 .ListLabel_20_61 .ListLabel_20_62 .ListLabel_20_63 .ListLabel_20_7 .ListLabel_20_8 .ListLabel_20_9  { } */
-</style>
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-top: 1px solid var(--rule);
+      padding-top: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── PROFILE ── */
+    .profile p {
+      font-size: 0.95rem;
+      color: var(--mid);
+      max-width: 62ch;
+    }
+
+    /* ── EXPERIENCE ── */
+    .job {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-title {
+      font-family: var(--sans);
+      font-weight: 500;
+      font-size: 0.92rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .job-company {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .job-date {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--mid);
+      white-space: nowrap;
+      padding-top: 0.15rem;
+      text-align: right;
+    }
+
+    .job ul {
+      list-style: none;
+      padding: 0;
+      grid-column: 1 / -1;
+    }
+
+    .job ul li {
+      font-size: 0.875rem;
+      color: var(--mid);
+      padding-left: 1em;
+      position: relative;
+      margin-bottom: 0.3rem;
+      line-height: 1.55;
+    }
+
+    .job ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--rule);
+    }
+
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+    }
+
+    .skill-row {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 0 1.25rem;
+      align-items: baseline;
+    }
+
+    .skill-label {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      padding-top: 0.1rem;
+    }
+
+    .skill-items {
+      font-size: 0.875rem;
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    /* ── EDUCATION ── */
+    .edu {
+      font-size: 0.875rem;
+    }
+
+    .edu strong {
+      font-weight: 500;
+      display: block;
+    }
+
+    .edu span {
+      color: var(--mid);
+      font-size: 0.82rem;
+    }
+
+    @media print {
+      body { padding: 1.5rem; background: white; }
+      .page { max-width: 100%; }
+    }
+  </style>
 </head>
+<body>
+  <div class="page">
 
-<body dir="ltr" style="max-width:21.59cm;margin-top:1.905cm; margin-bottom:1.905cm; margin-left:1.905cm; margin-right:1.905cm; ">
+    <header>
+      <h1>Leiss Hoffman</h1>
+      <p class="subtitle">Composer &nbsp;·&nbsp; Sound Designer</p>
+      <p class="contact">Edmonton, Alberta &nbsp;·&nbsp; <a href="mailto:leissmusic@gmail.com">leissmusic@gmail.com</a> &nbsp;·&nbsp; <a href="https://leissmusic.sharefol.io/leissportfolio2026">Portfolio</a></p>
+    </header>
 
-<p class="paragraph-P1"><span class="text-T1">LEISS HOFFMAN</span></p>
+    <section class="profile">
+      <p class="section-label">Profile</p>
+      <p>Freelance composer with 8 years of experience delivering music for video games across jazz, orchestral, chiptune, and hybrid genres. Skilled in music implementation, notation, live instrument recording, and working closely with audio and production leads to meet creative and technical milestones.</p>
+    </section>
 
-<p class="paragraph-P1"><span class="text-T2">Composer  |  Sound Designer</span></p>
+    <section>
+      <p class="section-label">Work Experience</p>
 
-<p class="paragraph-P1"><span class="text-T3">Edmonton, Alberta  |  Available Remote</span></p>
-<p class="paragraph-P2"> </p>
-<p class="paragraph-P3"><span class="text-T7">PROFILE</span></p>
+      <div class="job">
+        <div>
+          <div class="job-title">Composer</div>
+          <div class="job-company">Digital Eclipse</div>
+        </div>
+        <div class="job-date">2026</div>
+        <ul>
+          <li>Composed ~10 minutes of authentic 16-bit chiptune music for a globally recognized legacy IP collection (NDA).</li>
+          <li>Coordinated with other Composers and Project Leads to track and ship assets efficiently, helping the audio department deliver assets a month early.</li>
+        </ul>
+      </div>
 
-<p class="paragraph-P4"><span class="text-T8">Freelance composer with 8 years of experience delivering music for video games across jazz, orchestral, chiptune, and hybrid genres. Skilled in music implementation, notation, live instrument recording, and working closely with audio and production leads to meet creative and technical milestones.</span></p>
-<p class="paragraph-P2"> </p>
-<p class="paragraph-P3"><span class="text-T7">WORK EXPERIENCE</span></p>
+      <div class="job">
+        <div>
+          <div class="job-title">Composer</div>
+          <div class="job-company">Cuddling Raccoons Studio &mdash; Paper Animal Adventure</div>
+        </div>
+        <div class="job-date">2024</div>
+        <ul>
+          <li>Rearranged existing music for the game's Hard Mode, adapting themes to heighten tension for endgame content.</li>
+          <li>Title holds a 97% positive rating on Steam.</li>
+        </ul>
+      </div>
 
-<p class="paragraph-P5"><span class="text-T10">Composer </span><span class="text-T8"> |  </span><span class="text-T15">Digital Eclipse</span><span class="text-T8">        </span><span class="text-T15">2026</span></p>
-<ul><li><p class="P7" style="margin-left:0cm;"><span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;"></span><span class="text-T8">Composed ~10 minutes of </span><span class="text-T9">authentic 16-bit chiptune music</span><span class="text-T8"> for a globally recognized legacy IP collection (NDA).</span><span class="odfLiEnd"/> </p></li><li><p class="P7" style="margin-left:0cm;"><span class="ListLabel_20_1" style="display:block;float:left;min-width:0.635cm;"></span><span class="text-T8">Coordinated with </span><span class="text-T9">other Composers and </span><span class="text-T8">Project Leads to </span><span class="text-T9">track, refine and ship assets efficiently, helping the audio department deliver assets a month early.</span><span class="odfLiEnd"/> </p></li></ul>
-<p class="paragraph-P8"><span class="text-T10">Composer </span><span class="text-T8"> |  </span><span class="text-T15">Cuddling Raccoons Studio</span><span class="text-T8">        </span><span class="text-T15">2024</span></p>
-<ul><li><p class="P9" style="margin-left:0cm;"><span class="ListLabel_20_10" style="display:block;float:left;min-width:0.635cm;"></span><span class="text-T8">Rearranged existing music for roguelike Paper Animal Adventure's Hard Mode, adapting themes to heighten tension for endgame content.</span><span class="odfLiEnd"/> </p></li><li><p class="P9" style="margin-left:0cm;"><span class="ListLabel_20_10" style="display:block;float:left;min-width:0.635cm;"></span><span class="text-T8">Title holds a 97% positive rating on Steam.</span><span class="odfLiEnd"/> </p></li></ul>
-<p class="paragraph-P8"><span class="text-T10">Composer </span><span class="text-T8"> |  </span><span class="text-T15">Certeis Games – Orcish Skies</span><span class="text-T8">        </span><span class="text-T15">2023 – 2024</span></p>
-<ul><li><p class="P10" style="margin-left:0cm;"><span class="ListLabel_20_19" style="display:block;float:left;min-width:0.635cm;"></span><span class="text-T8">Arranged and orchestrated a traditional symphonic score for a strategy game entirely in Dorico, produced in Cubase.</span><span class="odfLiEnd"/> </p></li></ul>
-<p class="paragraph-P6"><span class="text-T10">Composer</span><span class="text-T8">  |  </span><span class="text-T15">Ellpeck Games – Tiny Life</span><span class="text-T8">        </span><span class="text-T15">2022 – 2023</span></p>
-<ul><li><p class="P11" style="margin-left:0cm;"><span class="ListLabel_20_28" style="display:block;float:left;min-width:0.635cm;"></span><span class="text-T8">Composed, arranged, and recorded 30 minutes of music across 11 tracks for life sim Tiny Life (89% positive, 323 Steam reviews). Earned praise from Sims designer Don Hopkins for the game's soundtrack.</span><span class="odfLiEnd"/> </p></li><li><p class="P20" style="margin-left:0cm;"><span class="ListLabel_20_28" style="display:block;float:left;min-width:0.635cm;"></span><span class="text-T8">Worked closely with the Sound Designer to redesign old sound assets to more closely align with the game’s soundtrack and artistic vision.</span><span class="odfLiEnd"/> </p></li></ul>
-<p class="paragraph-P8"><span class="text-T10">Composer </span><span class="text-T8"> |  </span><span class="text-T15">BroodStar</span><span class="text-T8">        </span><span class="text-T15">2020</span><span class="text-T11"> </span><span class="text-T16">–</span><span class="text-T15"> 2022</span></p>
-<ul><li><p class="P12" style="margin-left:0cm;"><span class="ListLabel_20_37" style="display:block;float:left;min-width:0.635cm;"></span><span class="text-T8">Composed a 17-track chiptune score for roguelike shmup BroodStar (93% positive, 83 Steam reviews).</span><span class="odfLiEnd"/> </p></li></ul>
-<p class="paragraph-P6"><span class="text-T10">Composer &amp; Sound Designer</span><span class="text-T8">  |  </span><span class="text-T15">Digital Dominion</span><span class="text-T4">        </span><span class="text-T15">2017 – 2018</span></p>
-<ul><li><p class="P13" style="margin-left:0cm;"><span class="ListLabel_20_46" style="display:block;float:left;min-width:0.635cm;"></span><span class="text-T8">Sequenced 60 loopable songs using the NES sound chip for a retro platformer inspired by classic NES games.</span><span class="odfLiEnd"/> </p></li></ul><p class="paragraph-P14"> </p>
-<p class="paragraph-P3"><span class="text-T7">SKILLS AND SOFTWARE</span></p>
+      <div class="job">
+        <div>
+          <div class="job-title">Composer</div>
+          <div class="job-company">Certeis Games &mdash; Orcish Skies</div>
+        </div>
+        <div class="job-date">2023 – 2024</div>
+        <ul>
+          <li>Orchestrated a symphonic score for a strategy game, notated entirely in Dorico and produced in Cubase.</li>
+        </ul>
+      </div>
 
-<p class="paragraph-P15"><span class="text-T17">Creative: </span><span class="text-T18"> </span><span class="text-T13">Composition, Arranging, Orchestration, Music Implementation, Recording, Mixing, Mastering, Music Notation, Post-Production, Audio Implementation, Music Theory, Performance</span></p>
+      <div class="job">
+        <div>
+          <div class="job-title">Composer</div>
+          <div class="job-company">Ellpeck Games &mdash; Tiny Life</div>
+        </div>
+        <div class="job-date">2022 – 2023</div>
+        <ul>
+          <li>Composed, arranged, and recorded 30 minutes of music across 11 tracks for life sim Tiny Life (89% positive, 323 Steam reviews). Earned praise from Sims designer Don Hopkins for the game's soundtrack.</li>
+          <li>Collaborated with the Sound Designer to redesign legacy audio assets in line with the game's artistic vision.</li>
+        </ul>
+      </div>
 
-<p class="paragraph-P16"><span class="text-T17">Software:  </span><span class="text-T8">Cubase, Dorico, Wwise,</span><span class="text-T10"> </span><span class="text-T8">Ozone, RX</span></p>
+      <div class="job">
+        <div>
+          <div class="job-title">Composer</div>
+          <div class="job-company">BroodStar</div>
+        </div>
+        <div class="job-date">2020 – 2022</div>
+        <ul>
+          <li>Composed a 17-track chiptune score for roguelike shmup BroodStar (93% positive, 83 Steam reviews).</li>
+        </ul>
+      </div>
 
-<p class="paragraph-P16"><span class="text-T17">Engines &amp; Mastering:  </span><span class="text-T8">Unity, Unreal</span></p>
+      <div class="job">
+        <div>
+          <div class="job-title">Composer &amp; Sound Designer</div>
+          <div class="job-company">Digital Dominion &mdash; Super Retro Maker</div>
+        </div>
+        <div class="job-date">2017 – 2018</div>
+        <ul>
+          <li>Sequenced 60 loopable songs using the NES sound chip for a retro platformer inspired by classic NES games.</li>
+        </ul>
+      </div>
+    </section>
 
-<p class="paragraph-P16"><span class="text-T10">Instruments: </span><span class="text-T12">Guitar, Bass, Synthesizers</span></p>
-<p class="paragraph-P17"> </p>
-<p class="paragraph-P3"><span class="text-T7">EDUCATION</span></p>
+    <section>
+      <p class="section-label">Skills &amp; Software</p>
+      <div class="skills-grid">
+        <div class="skill-row">
+          <span class="skill-label">Software</span>
+          <span class="skill-items">Cubase &middot; Dorico &middot; Wwise &middot; FMOD &middot; FamiTracker &middot; Phase Plant &middot; Ozone &middot; iZotope RX &middot; Unity</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Production</span>
+          <span class="skill-items">Composition &middot; Arranging &middot; Mixing &amp; Mastering &middot; Audio Implementation &middot; Music Notation</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Performance</span>
+          <span class="skill-items">Guitar &middot; Bass &middot; Synthesizers</span>
+        </div>
+      </div>
+    </section>
 
-<p class="paragraph-P19"><span class="text-T20">University of Alberta</span><span class="text-T5">  —  Edmonton, Alberta</span></p>
-<p class="paragraph-P18"> </p></body>
+    <section>
+      <p class="section-label">Education</p>
+      <div class="edu">
+        <strong>University of Alberta</strong>
+        <span>Edmonton, Alberta</span>
+      </div>
+    </section>
 
+  </div>
+</body>
 </html>
