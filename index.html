@@ -116,7 +116,13 @@
     }
 
     /*EXPERIENCE*/
-    .job, .project {
+    .job {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0 1rem;
+      margin-bottom: 0.3rem;
+    }
+      .project {
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 0 1rem;
@@ -126,8 +132,18 @@
     .job:last-child {
       margin-bottom: 0;
     }
+    .project:last-child {
+      margin-bottom: 0;
+    }
 
-    .job-title, .project-title {
+    .job-title {
+      font-family: var(--sans);
+      font-weight: 500;
+      font-style: bold;
+      font-size: 0.8rem;
+      margin-bottom: 0.1rem;
+    }
+      .project-title {
       font-family: var(--sans);
       font-weight: 500;
       font-style: bold;
@@ -166,7 +182,21 @@
       margin-bottom: 0.3rem;
       line-height: 1.55;
     }
-
+    
+    .project ul {
+      list-style: none;
+      padding: 0;
+      grid-column: 1 / -1;
+    }
+    .project ul li {
+      font-size: 0.8rem;
+      color: var(--mid);
+      padding-left: 1em;
+      position: relative;
+      margin-bottom: 0.3rem;
+      line-height: 1.55;
+    }
+    
     .job ul li::before {
       content: '♪';
       position: absolute;
