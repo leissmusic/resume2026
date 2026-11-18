@@ -167,7 +167,14 @@
       line-height: 1.55;
     }
 
-    .job ul li::before, .personalprojects ul li::before {
+    .job ul li::before {
+      content: '♪';
+      position: absolute;
+      left: 0;
+      color: var(--rule);
+    }
+
+     .personalprojects ul li::before {
       content: '♪';
       position: absolute;
       left: 0;
