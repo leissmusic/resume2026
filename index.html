@@ -220,7 +220,7 @@
 
     .skill-row {
       display: grid;
-      grid-template-columns: 90px 1fr;
+      grid-template-columns: 100px 1fr;
       gap: 0 1.25rem;
       align-items: baseline;
     }
@@ -291,12 +291,12 @@
       <p class="section-label">Skills &amp; Software</p>
       <div class="skills-grid">
         <div class="skill-row">
-          <span class="skill-label">Audio Implementation</span>
-          <span class="skill-items">Wwise, Godot, Unity</span>
-        </div>
-        <div class="skill-row">
            <span class="skill-label">Music Production</span>
           <span class="skill-items">Cubase, Dorico, Composition, Arranging, Recording, Mixing/Mastering</span>
+        </div>
+          <div class="skill-row">
+          <span class="skill-label">Implementation</span>
+          <span class="skill-items">Wwise, Godot, Unity</span>
         </div>
         <div class="skill-row">
            <span class="skill-label">Instruments</span>
@@ -369,9 +369,8 @@
       <div class="project-title">Adaptive Music Rescore (Cyberpunk 2077, noncommercial fan project) | Nov 2026 </div>
         </div>
           <ul>
-            <li>Composed and implemented ~10 minutes of adaptive music in Wwise using Music Switch Containers and State-group-driven switching: a six-section combat track with low/high intensity versions that switch on enemy proximity, and an exploration track with Safe and Alert states.</li>
-            <li>Drove mix and layering from a player-health RTPC: glitch percussion fades in as health drops, a low-pass filter engages below 50%, and distortion engages below 25%.</li>
-            <li>Bounced instrument busses from Cubase (123 WAVs, ~1.14 GB) and routed them to matching Wwise busses, bringing the project to ~200 MB with OGG compression.</li>
+            <li>Composed combat, exploration and bridge cues in Cubase, then built the adaptive system in Wwise: proximity-based intensity layers, health-driven RTPCs, and seamless state transitions. Iterated on feedback from game audio peers.</li>
+
             </ul>
         </div>
       
