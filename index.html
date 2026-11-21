@@ -18,7 +18,7 @@
       --accent-light: #e8f0eb;
       --serif: 'Jersey 25', sans-serif;
       --smaller-serif: 'Jersey 10', sans-serif;
-      --mono: 'DotGothic16';
+      --mono: 'DotGothic16', monospace;
       --sans: 'Geist Pixel', sans-serif;
     }
     
@@ -46,7 +46,6 @@
     header {
       border-bottom: 2px solid var(--ink);
       padding-bottom: 1rem;
-      margin-bottom: 0rem;
     }
 
     h1 {
@@ -77,18 +76,9 @@
       text-decoration: none;
     }
 
-    .portfolio a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
-    .portfolio a:hover {
-      text-decoration: underline;
-    }
+    .portfolio a { color: var(--accent); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+.portfolio a:hover { text-decoration: underline; }
 
 
     /*SECTIONS*/
@@ -116,17 +106,7 @@
     }
 
     /*EXPERIENCE*/
-    .job {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 0rem 1rem;
-      margin-bottom: 0.3rem;
-    }
-    
-      .project {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 0 1rem;
+    .job, .project {
       margin-bottom: 0.3rem;
     }
 
@@ -138,65 +118,22 @@
       margin-bottom: 0;
     }
 
-    .job-title {
+    .job-title, .project-title {
       font-family: var(--sans);
       font-weight: 500;
-      font-style: bold;
-      font-size: 0.8rem;
-      margin-bottom: 0.1rem;
-    }
-      .project-title {
-      font-family: var(--sans);
-      font-weight: 500;
-      font-style: bold;
       font-size: 0.8rem;
       margin-bottom: 0.1rem;
     }
 
-    .job-company {
-      font-family: var(--smaller-serif);
-      font-style: italic;
-      font-size: 1rem;
-      color: var(--ink);
-      margin-bottom: 0.05rem;
-    }
-
-    .job-date {
-      font-family: var(--sans);
-      font-size: 0.9rem;
-      color: var(--mid);
-      white-space: nowrap;
-      padding-top: 0.15rem;
-      text-align: right;
-    }
-
-    .job ul {
+    .job ul, .project ul {
       list-style: none;
-      padding: 0;
-      grid-column: 1 / -1;
     }
 
-    .job ul li {
+    .job ul li, .project ul li {
       font-size: 0.8rem;
       color: var(--mid);
-      padding-left: 1em;
-      position: relative;
-      margin-bottom: 0.3rem;
       line-height: 1.2;
-    }
-    
-    .project ul {
-      list-style: none;
-      padding: 0;
-      grid-column: 1 / -1;
       margin-bottom: 0.3rem;
-    }
-    .project ul li {
-      font-size: 0.8rem;
-      color: var(--mid);
-      padding-left: 1em;
-      position: relative;
-      line-height: 1.2;
     }
     
     .job ul li::before {
@@ -279,9 +216,33 @@
       padding-top: 0.15rem;
       text-align: right;
     }
+/* PRINT / ATS: standard font, no tracking, no case transforms.
+       The pixel fonts remain on screen only. */
+    @page { margin: 0.5in; }
+
     @media print {
-      body { padding: 1.5rem; background: white; }
+      body {
+        padding: 0;
+        background: white;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
       .page { max-width: 100%; }
+
+      
+{
+      font-family: Arial, Helvetica, sans-serif !important;
+      letter-spacing: normal !important;
+      text-transform: none !important;}
+
+      h1 { font-size: 24pt; font-weight: 700; }
+      .subtitle { font-size: 11pt; }
+      .contact, .summary-text,
+      .skill-row, .job ul li, .project ul li,
+      .edu-title, .edu-degree { font-size: 9.5pt; }
+      .section-label, .job-title, .project-title { font-size: 10pt; font-weight: 700; }
+      .skill-label { font-weight: 700; }
+      .job, .project, li { break-inside: avoid; }
     }
   </style>
 </head>
