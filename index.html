@@ -123,18 +123,6 @@
       line-height: 1.2;
       margin-bottom: 0.3rem;
     }
-    
-    .job ul li::before {
-      position: absolute;
-      left: 0;
-      color: var(--rule);
-    }
-
-     .personalprojects ul li::before {
-      position: absolute;
-      left: 0;
-      color: var(--rule);
-    }
 
     /*EDUCATION*/
     .edu {
@@ -199,54 +187,37 @@
       <h1>Leiss Hoffman</h1>
       <p class="subtitle">Composer</p>
       <p class="contact">Edmonton, Alberta (willing to relocate) | <a href="mailto:leissmusic@gmail.com">leissmusic@gmail.com</a> | <a href="https://leissmusic.sharefol.io/2026_reel">https://leissmusic.sharefol.io/2026_reel</a></p>
-      <div class="summary-text"><p>Composer and multi-instrumentalist with 7 years of indie and AA experience, whose scores span progressive metal and chiptune. Composed for Barbie Rewind (2026). Built an adaptive music system in Wwise 2025.1 in three weeks. Seeking a Composer or Composer’s Assistant role at an AAA studio.</p>
-      </div>
+      <p class="summary-text">Composer and multi-instrumentalist with 7 years of indie and AA experience, whose scores span progressive metal and chiptune. Composed for Barbie Rewind (2026). Built an adaptive music system in Wwise 2025.1 in three weeks. Seeking a Composer or Composer’s Assistant role at an AAA studio.</p>
     </header>
-    
-    <section class="skillsthatkill">
-      <p class="section-label">Skills</p>
-      <div class="skills-grid">
-        <div class="skill-row">
-           <span class="skill-label">Music Production | </span>
-<span class="skill-items">Cubase, Composition, Recording, Mixing</span> 
-        </div>
-          <div class="skill-row">
-          <span class="skill-label">Implementation | </span>
-             <span class="skill-items">Wwise, REAPER, Adaptive Music Systems</span>
-        </div>
-        <div class="skill-row">
-           <span class="skill-label">Performance |</span>
-           <span class="skill-items">Guitar, Bass, Keyboards</span>
-        </div>
-      </div>
+
+    <section>
+      <h2 class="section-label">Skills</h2>
+      <p class="skill-row"><span class="skill-label">Music Production:</span> <span class="skill-items">Cubase, Composition, Recording, Mixing</span></p>
+      <p class="skill-row"><span class="skill-label">Implementation:</span> <span class="skill-items">Wwise, REAPER, Adaptive Music Systems</span></p>
+      <p class="skill-row"><span class="skill-label">Performance:</span> <span class="skill-items">Guitar, Bass, Keyboards</span></p>
     </section>
-    
-    <section class="workit_baby">
-      <p class="section-label">Professional Experience</p>
+
+    <section>
+      <h2 class="section-label">Professional Experience</h2>
+
       <div class="job">
-        <div>
-          <div class="job-title">Composer | Atari, Digital Eclipse | Aug 2025 - Feb 2026</div>
-        </div>
+        <h3 class="job-title">Composer | Atari, Digital Eclipse | Aug 2025 - Feb 2026</h3>
         <ul>
           <li>- Composed 10 minutes of Sega Genesis-era chiptune music for Barbie Rewind (2026), across four genres (rock, jazz, house, city pop); tracks were two minutes in length and made to seamlessly loop, matching the audio lead's specifications.</li>
           <li>- Iterated rapidly on first drafts by building and reusing customized track templates, resulting in deliverables being submitted six weeks early without need for revision.</li>
         </ul>
       </div>
 
-            <div class="job">
-        <div>
-          <div class="job-title">Composer | Ellpeck Games | Mar 2022 - Present</div>
-        </div>
+      <div class="job">
+        <h3 class="job-title">Composer | Ellpeck Games | Mar 2022 - Present</h3>
         <ul>
           <li>- Composing 30 minutes of music for Tiny Life (2023, 88% positive at 338 reviews), expanding the soundtrack to nearly an hour of songs.</li>
-        <li>- Previously composed 27 minutes of songs featuring live instrument recordings and spanning multiple music genres, which Don Hopkins (The Sims programmer) described as a "mesmerizing soundtrack".</li> 
+          <li>- Previously composed 27 minutes of songs featuring live instrument recordings and spanning multiple music genres, which Don Hopkins (The Sims programmer) described as a "mesmerizing soundtrack".</li>
         </ul>
       </div>
 
       <div class="job">
-        <div>
-          <div class="job-title">Composer | DreadXP, Pollaris Studios | Nov 2022 - Jan 2023</div>
-        </div>
+        <h3 class="job-title">Composer | DreadXP, Pollaris Studios | Nov 2022 - Jan 2023</h3>
         <ul>
           <li>- Composed three elevator muzak compositions for Red Tape (2023, 87% positive at 244 reviews) which were altered by co-composer using analog processing and tape manipulation.</li>
           <li>- Performed jazz guitar in conjunction with dated ROMpler samples and synthesizers to give the original compositions a vintage muzak aesthetic.</li>
@@ -254,44 +225,36 @@
       </div>
 
       <div class="job">
-        <div>
-          <div class="job-title">Composer | Broodstar | Jul 2019 - Aug 2022 </div>
-        </div>
+        <h3 class="job-title">Composer | Broodstar | Jul 2019 - Aug 2022</h3>
         <ul>
           <li>- Composed ~30 minutes across 17 tracks for 16-bit roguelike shmup Broodstar (2022, 93% positive at 82 reviews); used Chipsynth MD and SFC to write the soundtrack.</li>
-        <li>- Composed and recorded rhythm and lead guitar parts for final stages featuring progressive metal tracks.</li>
+          <li>- Composed and recorded rhythm and lead guitar parts for final stages featuring progressive metal tracks.</li>
         </ul>
       </div>
-      
     </section>
 
-    <section class="personalprojects">
-      <p class="section-label">Projects</p>
+    <section>
+      <h2 class="section-label">Projects</h2>
       <div class="project">
-        <div>
-      <div class="project-title">Wwise Adaptive Music Demo (Cyberpunk 2077 fan project) | Nov 2026 | <a href="https://youtu.be/jtMLEH_5O1Y">https://youtu.be/jtMLEH_5O1Y</a></div>
-        </div>
-          <ul>
-            <li>- Composed 18 minutes of industrial metal and ambient electronic music in Cubase, rendering instrument stems into Wwise 2025.1 to build an adaptive music system with a labeled bus setup for real-time mixing and sidechaining.</li>
-<li>- Designed State Groups (Environment, Enemy Awareness, Game State, Intensity) and drove them with Events posted from REAPER, so players hear ambient electronic music while exploring and hard-hitting industrial music in combat.</li>
-<li>- Implemented transitions between combat and exploration cues using Bridge containers, with lowpass and highpass filter events to tame harsh frequencies.</li>
-<li>- Designed RTPCs that automate lowpass filter, distortion, and bus volumes based on player health, fading glitchy synthesizer layers in and out as players encounter (and recover from) desperate scenarios.</li>
-            </ul>
-        </div>
-      
+        <h3 class="project-title">Wwise Adaptive Music Demo (Cyberpunk 2077 fan project) | Nov 2026 | <a href="https://youtu.be/jtMLEH_5O1Y">https://youtu.be/jtMLEH_5O1Y</a></h3>
+        <ul>
+          <li>- Composed 18 minutes of industrial metal and ambient electronic music in Cubase, rendering instrument stems into Wwise 2025.1 to build an adaptive music system with a labeled bus setup for real-time mixing and sidechaining.</li>
+          <li>- Designed State Groups (Environment, Enemy Awareness, Game State, Intensity) and drove them with Events posted from REAPER, so players hear ambient electronic music while exploring and hard-hitting industrial music in combat.</li>
+          <li>- Implemented transitions between combat and exploration cues using Bridge containers, with lowpass and highpass filter events to tame harsh frequencies.</li>
+          <li>- Designed RTPCs that automate lowpass filter, distortion, and bus volumes based on player health, fading glitchy synthesizer layers in and out as players encounter (and recover from) desperate scenarios.</li>
+        </ul>
+      </div>
     </section>
-    <section class="yougonnalearntoday">
-      <p class="section-label">Education</p>
-            <div class="edu">
-        <div>
-        <div class="edu-title">Audiokinetic Wwise 101, 201 & 301 | 2026</div></div>
+
+    <section>
+      <h2 class="section-label">Education</h2>
+      <div class="edu">
+        <p class="edu-title">Audiokinetic Wwise 101, 201 &amp; 301 | 2026</p>
       </div>
       <div class="edu">
-        <div>
-        <div class="edu-title">University of Alberta</div>
-        <div class="edu-degree">B.Sc., Psychology</div></div>
+        <p class="edu-title">University of Alberta</p>
+        <p class="edu-degree">B.Sc., Psychology</p>
       </div>
-
     </section>
 
   </div>
