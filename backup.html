@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leiss Hoffman - Composer</title>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Geist+Pixel&family=Jersey+10&family=Jersey+25&family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f2ec;
+      --ink: #1a1714;
+      --mid: #5a5450;
+      --accent: #2b4d3a;
+      --accent-light: #e8f0eb;
+      --serif: 'Jersey 25', sans-serif;
+      --smaller-serif: 'Jersey 10', sans-serif;
+      --mono: 'DotGothic16', monospace;
+      --sans: 'Geist Pixel', sans-serif;
+    }
+    
+.jersey-25-regular {
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.2;
+      padding: 3rem 1.5rem;
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /*HEADER*/
+    header {
+      border-bottom: 2px solid var(--ink);
+      padding-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 6vw, 3.8rem);
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+
+    .subtitle {
+      font-family: var(--mono);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact { font-size: 0.750rem; color: var(--mid); text-decoration: none; }
+    .contact a {color: var(--accent); text-decoration: none; }
+    .contact a:hover {text-decoration: underline; }
+    .summary-text { font-size:0.8rem; font-weight:500; }
+
+    /*SECTIONS*/
+    section {
+      margin-bottom: 1rem;
+    }
+
+    .section-label {
+      font-family: var(--mono);
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: var(--mid);
+      border-top: 1px solid var(--rule);
+      padding-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+   /* SKILLS */
+    .skill-row { font-size: 0.8rem; margin-bottom: 0.3rem; }
+    .skill-label { font-family: var(--sans); font-weight: 700; color: var(--mid); text-transform: uppercase; }
+    .skill-items { color: var(--ink); }
+    
+    /*EXPERIENCE*/
+    .job, .project {
+      margin-bottom: 0.3rem;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+    
+    .project:last-child {
+      margin-bottom: 0;
+    }
+
+    .job-title, .project-title {
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .job ul, .project ul {
+      list-style: none;
+    }
+
+    .job ul li, .project ul li {
+      font-size: 0.8rem;
+      color: var(--mid);
+      line-height: 1.2;
+      margin-bottom: 0.3rem;
+    }
+
+    /*EDUCATION*/
+    .edu {
+      margin-bottom: 0.3rem;
+    }
+
+    .edu-title {
+      font-size: .8rem;
+      font-weight: 500;
+    }
+    
+/* PRINT / ATS: standard font, no tracking, no case transforms.
+       The pixel fonts remain on screen only. */
+    @page { margin: 0.5in; }
+
+    @media print {
+      body {
+        padding: 0;
+        background: white;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .page { max-width: 100%; }
+
+      
+* {
+      letter-spacing: normal !important;
+      text-transform: none !important;}
+
+      h1 { font-size: 24pt; font-weight: 700; }
+      .subtitle { font-size: 11pt; letter-spacing:0em; }
+      .contact, .summary-text,
+      .skill-row, .job ul li, .project ul li,
+      .edu-title, .edu-degree { font-size: 9.5pt; }
+      .section-label, .job-title, .project-title { font-size: 9.5pt; font-weight: 700; }
+      .skill-label, .skill-items { display: inline; font-weight: 700; font-size: inherit; color: inherit; }
+      .job, .project, li { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <h1>Leiss Hoffman</h1>
+      <p class="subtitle">Composer</p>
+      <p class="contact">Edmonton, Alberta (willing to relocate) | <a href="mailto:leissmusic@gmail.com">leissmusic@gmail.com</a> | <a href="https://leissmusic.sharefol.io/2026_reel">https://leissmusic.sharefol.io/2026_reel</a></p>
+      <p class="summary-text">Composer and multi-instrumentalist with 7 years of indie and AA experience, whose scores span progressive metal and chiptune. Composed for Barbie Rewind (2026). Built an adaptive music system in Wwise 2025.1 in three weeks. Seeking a Composer or Composer’s Assistant role at an AAA studio.</p>
+    </header>
+
+    <section>
+      <h2 class="section-label">Skills</h2>
+      <p class="skill-row"><span class="skill-label">Music Production | </span> <span class="skill-items">Cubase, Composition, Recording, Mixing</span></p>
+      <p class="skill-row"><span class="skill-label">Implementation | </span> <span class="skill-items">Wwise, REAPER, Adaptive Music Systems</span></p>
+      <p class="skill-row"><span class="skill-label">Performance | </span> <span class="skill-items">Guitar, Bass, Keyboards</span></p>
+    </section>
+
+    <section>
+      <h2 class="section-label">Professional Experience</h2>
+
+      <div class="job">
+        <h3 class="job-title">Composer | Atari, Digital Eclipse | Aug 2025 - Feb 2026</h3>
+        <ul>
+          <li>- Composed 10 minutes of Sega Genesis-era chiptune music for Barbie Rewind (2026), across four genres (rock, jazz, house, city pop); tracks were two minutes in length and made to seamlessly loop, matching the audio lead's specifications.</li>
+          <li>- Iterated rapidly on first drafts by building and reusing customized track templates, resulting in deliverables being submitted six weeks early without need for revision.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3 class="job-title">Composer | Ellpeck Games | Mar 2022 - Present</h3>
+        <ul>
+          <li>- Composing 30 minutes of music for Tiny Life (2023, 88% positive at 338 reviews), expanding the soundtrack to nearly an hour of songs.</li>
+          <li>- Previously composed 27 minutes of songs featuring live instrument recordings and spanning multiple music genres, which Don Hopkins (The Sims programmer) described as a "mesmerizing soundtrack".</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3 class="job-title">Composer | DreadXP, Pollaris Studios | Nov 2022 - Jan 2023</h3>
+        <ul>
+          <li>- Composed three elevator muzak compositions for Red Tape (2023, 87% positive at 244 reviews) which were altered by co-composer using analog processing and tape manipulation.</li>
+          <li>- Performed jazz guitar in conjunction with dated ROMpler samples and synthesizers to give the original compositions a vintage muzak aesthetic.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3 class="job-title">Composer | Broodstar | Jul 2019 - Aug 2022</h3>
+        <ul>
+          <li>- Composed ~30 minutes across 17 tracks for 16-bit roguelike shmup Broodstar (2022, 93% positive at 82 reviews); used Chipsynth MD and SFC to write the soundtrack.</li>
+          <li>- Composed and recorded rhythm and lead guitar parts for final stages featuring progressive metal tracks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-label">Projects</h2>
+      <div class="project">
+        <h3 class="project-title">Wwise Adaptive Music Demo (Cyberpunk 2077 fan project) | Nov 2026 | <a href="https://youtu.be/jtMLEH_5O1Y">https://youtu.be/jtMLEH_5O1Y</a></h3>
+        <ul>
+          <li>- Composed 18 minutes of industrial metal and ambient electronic music in Cubase, rendering instrument stems into Wwise 2025.1 to build an adaptive music system with a labeled bus setup for real-time mixing and sidechaining.</li>
+          <li>- Designed State Groups (Environment, Enemy Awareness, Game State, Intensity) and drove them with Events posted from REAPER, so players hear ambient electronic music while exploring and hard-hitting industrial music in combat.</li>
+          <li>- Implemented transitions between combat and exploration cues using Bridge containers, with lowpass and highpass filter events to tame harsh frequencies.</li>
+          <li>- Designed RTPCs that automate lowpass filter, distortion, and bus volumes based on player health, fading glitchy synthesizer layers in and out as players encounter (and recover from) desperate scenarios.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-label">Education</h2>
+      <div class="edu">
+        <p class="edu-title">Audiokinetic Wwise 101, 201 &amp; 301 | 2026</p>
+      </div>
+      <div class="edu">
+        <p class="edu-title">B.Sc., Psychology | University of Alberta</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
